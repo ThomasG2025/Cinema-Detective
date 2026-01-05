@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+<?import javafx.scene.layout.StackPane?>
+<Pane fx:id="main_Pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CinemaDetectiveV1.Classes.userInterfaceController">
+   <children>
+      <Accordion fx:id="Filters_Menu" layoutX="14.0" layoutY="28.0" prefHeight="50.0" prefWidth="198.0">
+        <panes>
+          <TitledPane fx:id="years_Filter_Pane" animated="false" prefHeight="340.0" prefWidth="402.0" text="Years">
+               <content>
+                  <AnchorPane fx:id="years_Filter_Anchor_Pane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="200.0">
+                     <children>
+                        <CheckBox fx:id="year_2000_Box" layoutX="14.0" layoutY="42.0" mnemonicParsing="false" text="2000" />
+                        <CheckBox fx:id="year_2001_Box" layoutX="77.0" layoutY="42.0" mnemonicParsing="false" text="2001" />
+                        <CheckBox fx:id="year_2002_Box" layoutX="141.0" layoutY="42.0" mnemonicParsing="false" text="2002" />
+                        <CheckBox fx:id="year_2003_Box" layoutX="206.0" layoutY="42.0" mnemonicParsing="false" text="2003" />
+                        <CheckBox fx:id="year_2004_Box" layoutX="269.0" layoutY="42.0" mnemonicParsing="false" text="2004" />
+                        <CheckBox fx:id="year_2005_Box" layoutX="334.0" layoutY="42.0" mnemonicParsing="false" text="2005" />
+                        <CheckBox fx:id="year_2006_Box" layoutX="14.0" layoutY="85.0" mnemonicParsing="false" text="2006" />
+                        <CheckBox fx:id="year_2007_Box" layoutX="77.0" layoutY="85.0" mnemonicParsing="false" text="2007" />
+                        <CheckBox fx:id="year_2008_Box" layoutX="141.0" layoutY="85.0" mnemonicParsing="false" text="2008" />
+                        <CheckBox fx:id="year_2009_Box" layoutX="206.0" layoutY="85.0" mnemonicParsing="false" text="2009" />
+                        <CheckBox fx:id="year_2010_Box" layoutX="269.0" layoutY="85.0" mnemonicParsing="false" text="2010" />
+                        <CheckBox fx:id="year_2011_Box" layoutX="334.0" layoutY="85.0" mnemonicParsing="false" text="2011" />
+                        <CheckBox fx:id="year_2012_Box" layoutX="14.0" layoutY="126.0" mnemonicParsing="false" text="2012" />
+                        <CheckBox fx:id="year_2013_Box" layoutX="77.0" layoutY="126.0" mnemonicParsing="false" text="2013" />
+                        <CheckBox fx:id="year_2014_Box" layoutX="141.0" layoutY="126.0" mnemonicParsing="false" text="2014" />
+                        <CheckBox fx:id="year_2015_Box" layoutX="206.0" layoutY="126.0" mnemonicParsing="false" text="2015" />
+                        <CheckBox fx:id="year_2016_Box" layoutX="269.0" layoutY="126.0" mnemonicParsing="false" text="2016" />
+                        <CheckBox fx:id="year_2017_Box" layoutX="334.0" layoutY="126.0" mnemonicParsing="false" text="2017" />
+                        <CheckBox fx:id="year_2018_Box" layoutX="14.0" layoutY="162.0" mnemonicParsing="false" text="2018" />
+                        <CheckBox fx:id="year_2019_Box" layoutX="77.0" layoutY="162.0" mnemonicParsing="false" text="2019" />
+                        <CheckBox fx:id="year_2020_Box" layoutX="141.0" layoutY="162.0" mnemonicParsing="false" text="2020" />
+                        <CheckBox fx:id="year_2021_Box" layoutX="200.0" layoutY="162.0" mnemonicParsing="false" text="2021" />
+                        <CheckBox fx:id="year_2022_Box" layoutX="269.0" layoutY="162.0" mnemonicParsing="false" text="2022" />
+                        <CheckBox fx:id="year_2023_Box" layoutX="334.0" layoutY="162.0" mnemonicParsing="false" text="2023" />
+                        <CheckBox fx:id="year_2024_Box" layoutX="14.0" layoutY="196.0" mnemonicParsing="false" text="2024" />
+                        <CheckBox fx:id="year_All_Box" layoutX="77.0" layoutY="196.0" mnemonicParsing="false" text="All" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </TitledPane>
+            <TitledPane fx:id="genres_Filter_Pane" prefHeight="200.0" prefWidth="200.0" text="Genres">
+               <content>
+                  <AnchorPane fx:id="genres_Filter_Anchor_Pane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="225.0" prefWidth="400.0">
+                     <children>
+                        <CheckBox fx:id="genre_Action_Box" layoutX="14.0" layoutY="39.0" mnemonicParsing="false" text="Action" />
+                        <CheckBox fx:id="genre_Adventure_Box" layoutX="80.0" layoutY="39.0" mnemonicParsing="false" text="Adventure" />
+                        <CheckBox fx:id="genre_Animation_Box" layoutX="164.0" layoutY="39.0" mnemonicParsing="false" text="Animation" />
+                        <CheckBox fx:id="genre_Comedy_Box" layoutX="254.0" layoutY="39.0" mnemonicParsing="false" text="Comedy" />
+                        <CheckBox fx:id="genre_Crime_Box" layoutX="14.0" layoutY="74.0" mnemonicParsing="false" text="Crime" />
+                        <CheckBox fx:id="genre_Documentary_Box" layoutX="80.0" layoutY="74.0" mnemonicParsing="false" text="Documentary" />
+                        <CheckBox fx:id="genre_Drama_Box" layoutX="254.0" layoutY="74.0" mnemonicParsing="false" text="Drama" />
+                        <CheckBox fx:id="genre_Family_Box" layoutX="13.0" layoutY="105.0" mnemonicParsing="false" text="Family" />
+                        <CheckBox fx:id="genre_Fantasy_Box" layoutX="80.0" layoutY="105.0" mnemonicParsing="false" text="Fantasy" />
+                        <CheckBox fx:id="genre_History_Box" layoutX="164.0" layoutY="105.0" mnemonicParsing="false" text="History" />
+                        <CheckBox fx:id="genre_Horror_Box" layoutX="254.0" layoutY="105.0" mnemonicParsing="false" text="Horror" />
+                        <CheckBox fx:id="genre_Music_Box" layoutX="13.0" layoutY="142.0" mnemonicParsing="false" text="Music" />
+                        <CheckBox fx:id="genre_Mystery_Box" layoutX="79.0" layoutY="142.0" mnemonicParsing="false" text="Mystery" />
+                        <CheckBox fx:id="genre_Romance_Box" layoutX="164.0" layoutY="142.0" mnemonicParsing="false" text="Romance" />
+                        <CheckBox fx:id="genre_Science_Fiction_Box" layoutX="250.0" layoutY="142.0" mnemonicParsing="false" text="Science Fiction" />
+                        <CheckBox fx:id="genre_Thriller_Box" layoutX="13.0" layoutY="179.0" mnemonicParsing="false" text="Thriller" />
+                        <CheckBox fx:id="genre_War_Box" layoutX="82.0" layoutY="179.0" mnemonicParsing="false" text="War" />
+                        <CheckBox fx:id="genre_Western_Box" layoutX="163.0" layoutY="179.0" mnemonicParsing="false" text="Western" />
+                        <CheckBox fx:id="genre_All_Box" layoutX="246.0" layoutY="179.0" mnemonicParsing="false" text="All" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </TitledPane>
+          <TitledPane fx:id="original_Language_Filter_Pane" animated="false" text="Original Language">
+               <content>
+                  <AnchorPane fx:id="original_Language_Filter_Anchor_Pane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="400.0">
+                     <children>
+                        <CheckBox fx:id="o_Language_Ar_Box" layoutX="14.0" layoutY="33.0" mnemonicParsing="false" text="Ar" />
+                        <CheckBox fx:id="o_Language_Cn_Box" layoutX="57.0" layoutY="33.0" mnemonicParsing="false" text="Cn" />
+                        <CheckBox fx:id="o_Language_Cs_Box" layoutX="100.0" layoutY="33.0" mnemonicParsing="false" text="Cs" />
+                        <CheckBox fx:id="o_Language_Da_Box" layoutX="143.0" layoutY="33.0" mnemonicParsing="false" text="Da" />
+                        <CheckBox fx:id="o_Language_De_Box" layoutX="189.0" layoutY="33.0" mnemonicParsing="false" text="De" />
+                        <CheckBox fx:id="o_Language_El_Box" layoutX="239.0" layoutY="33.0" mnemonicParsing="false" text="El" />
+                        <CheckBox fx:id="o_Language_En_Box" layoutX="275.0" layoutY="33.0" mnemonicParsing="false" text="En" />
+                        <CheckBox fx:id="o_Language_Es_Box" layoutX="320.0" layoutY="33.0" mnemonicParsing="false" text="Es" />
+                        <CheckBox fx:id="o_Language_Et_Box" layoutX="15.0" layoutY="66.0" mnemonicParsing="false" text="Et" />
+                        <CheckBox fx:id="o_Language_Fa_Box" layoutX="57.0" layoutY="66.0" mnemonicParsing="false" text="Fa" />
+                        <CheckBox fx:id="o_Language_Fi_Box" layoutX="102.0" layoutY="66.0" mnemonicParsing="false" text="Fi" />
+                        <CheckBox fx:id="o_Language_Fr_Box" layoutX="143.0" layoutY="66.0" mnemonicParsing="false" text="Fr" />
+                        <CheckBox fx:id="o_Language_Hr_Box" layoutX="189.0" layoutY="66.0" mnemonicParsing="false" text="Hr" />
+                        <CheckBox fx:id="o_Language_Id_Box" layoutX="239.0" layoutY="66.0" mnemonicParsing="false" text="Id" />
+                        <CheckBox fx:id="o_language_It_Box" layoutX="273.0" layoutY="66.0" mnemonicParsing="false" text="It" />
+                        <CheckBox fx:id="o_Language_Ja_Box" layoutX="317.0" layoutY="66.0" mnemonicParsing="false" text="Ja" />
+                        <CheckBox fx:id="o_Language_Kn_Box" layoutX="15.0" layoutY="100.0" mnemonicParsing="false" text="Kn" />
+                        <CheckBox fx:id="o_Language_Ko_Box" layoutX="56.0" layoutY="100.0" mnemonicParsing="false" text="Ko" />
+                        <CheckBox fx:id="o_Language_Ml_Box" layoutX="98.0" layoutY="100.0" mnemonicParsing="false" text="Ml" />
+                        <CheckBox fx:id="o_Language_Nl_Box" layoutX="143.0" layoutY="100.0" mnemonicParsing="false" text="Nl" />
+                        <CheckBox fx:id="o_Language_No_Box" layoutX="189.0" layoutY="100.0" mnemonicParsing="false" text="No" />
+                        <CheckBox fx:id="o_Language_Pa_Box" layoutX="237.0" layoutY="100.0" mnemonicParsing="false" text="Pa" />
+                        <CheckBox fx:id="o_Language_Pl_Box" layoutX="273.0" layoutY="100.0" mnemonicParsing="false" text="Pl" />
+                        <CheckBox fx:id="o_Language_Pt_Box" layoutX="317.0" layoutY="100.0" mnemonicParsing="false" text="Pt" />
+                        <CheckBox fx:id="o_Language_Ru_Box" layoutX="14.0" layoutY="131.0" mnemonicParsing="false" text="Ru" />
+                        <CheckBox fx:id="o_Language_Sr_Box" layoutX="55.0" layoutY="131.0" mnemonicParsing="false" text="Sr" />
+                        <CheckBox fx:id="o_Language_Sv_Box" layoutX="96.0" layoutY="131.0" mnemonicParsing="false" text="Sv" />
+                        <CheckBox fx:id="o_Language_Ta_Box" layoutX="143.0" layoutY="131.0" mnemonicParsing="false" text="Ta" />
+                        <CheckBox fx:id="o_Language_Te_Box" layoutX="189.0" layoutY="131.0" mnemonicParsing="false" text="Te" />
+                        <CheckBox fx:id="o_Language_Th_Box" layoutX="237.0" layoutY="131.0" mnemonicParsing="false" text="Th" />
+                        <CheckBox fx:id="o_Language_Tl_Box" layoutX="317.0" layoutY="131.0" mnemonicParsing="false" text="Tl" />
+                        <CheckBox fx:id="o_Language_Tr_Box" layoutX="14.0" layoutY="159.0" mnemonicParsing="false" text="Tr" />
+                        <CheckBox fx:id="o_Language_Uk_Box" layoutX="54.0" layoutY="159.0" mnemonicParsing="false" text="Uk" />
+                        <CheckBox fx:id="o_Language_Vi_Box" layoutX="96.0" layoutY="159.0" mnemonicParsing="false" text="Vi" />
+                        <CheckBox fx:id="o_Language_Zh_Box" layoutX="140.0" layoutY="159.0" mnemonicParsing="false" text="Zh" />
+                        <CheckBox fx:id="o_Language_All_Box" layoutX="186.0" layoutY="159.0" mnemonicParsing="false" text="All" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </TitledPane>
+            <TitledPane fx:id="production_Countries_Filter_Pane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" text="Production Countries">
+               <content>
+                  <AnchorPane fx:id="production_Countries_Filter_Anchor_Pane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="500.0">
+                     <children>
+                        <CheckBox fx:id="pro_Co_Algeria_Box" layoutX="14.0" layoutY="30.0" mnemonicParsing="false" text="Algeria" />
+                        <CheckBox fx:id="pro_Co_Argentina_Box" layoutX="84.0" layoutY="30.0" mnemonicParsing="false" text="Argentina" />
+                        <CheckBox fx:id="pro_Co_Australia_Box" layoutX="169.0" layoutY="30.0" mnemonicParsing="false" text="Australia" />
+                        <CheckBox fx:id="pro_Co_Austria_Box" layoutX="250.0" layoutY="30.0" mnemonicParsing="false" text="Austria" />
+                        <CheckBox fx:id="pro_Co_Bahamas_Box" layoutX="321.0" layoutY="30.0" mnemonicParsing="false" text="Bahamas" />
+                        <CheckBox fx:id="pro_Co_Belgium_Box" layoutX="404.0" layoutY="30.0" mnemonicParsing="false" text="Belgium" />
+                        <CheckBox fx:id="pro_Co_Brazil_Box" layoutX="14.0" layoutY="63.0" mnemonicParsing="false" text="Brazil" />
+                        <CheckBox fx:id="pro_Co_Bulgaria_Box" layoutX="84.0" layoutY="63.0" mnemonicParsing="false" text="Bulgaria" />
+                        <CheckBox fx:id="pro_Co_Cambodia_Box" layoutX="169.0" layoutY="63.0" mnemonicParsing="false" text="Cambodia" />
+                        <CheckBox fx:id="pro_Co_Canada_Box" layoutX="250.0" layoutY="63.0" mnemonicParsing="false" text="Canada" />
+                        <CheckBox fx:id="pro_Co_Chile_Box" layoutX="319.0" layoutY="63.0" mnemonicParsing="false" text="Chile" />
+                        <CheckBox fx:id="pro_Co_China_Box" layoutX="404.0" layoutY="63.0" mnemonicParsing="false" text="China" />
+                        <CheckBox fx:id="pro_Co_Czech_Republic_Box" layoutX="14.0" layoutY="97.0" mnemonicParsing="false" text="Czech Republic" />
+                        <CheckBox fx:id="pro_Co_Denmark_Box" layoutX="166.0" layoutY="97.0" mnemonicParsing="false" text="Denmark" />
+                        <CheckBox fx:id="pro_Co_Dominican_Republic_Box" layoutX="250.0" layoutY="97.0" mnemonicParsing="false" text="Dominican Republic" />
+                        <CheckBox fx:id="pro_Co_Ecuador_Box" layoutX="404.0" layoutY="97.0" mnemonicParsing="false" text="Ecuador" />
+                        <CheckBox fx:id="pro_Co_Estonia_Box" layoutX="14.0" layoutY="133.0" mnemonicParsing="false" text="Estonia" />
+                        <CheckBox fx:id="pro_Co_Finland_Box" layoutX="165.0" layoutY="133.0" mnemonicParsing="false" text="Finland" />
+                        <CheckBox fx:id="pro_Co_France_Box" layoutX="250.0" layoutY="133.0" mnemonicParsing="false" text="France" />
+                        <CheckBox fx:id="pro_Co_Germany_Box" layoutX="404.0" layoutY="133.0" mnemonicParsing="false" text="Germany" />
+                        <CheckBox fx:id="pro_Co_Greece_Box" layoutX="14.0" layoutY="172.0" mnemonicParsing="false" text="Greece" />
+                        <CheckBox fx:id="pro_Co_Hong_Kong_Box" layoutX="84.0" layoutY="172.0" mnemonicParsing="false" text="Hong Kong" />
+                        <CheckBox fx:id="pro_Co_Hungary_Box" layoutX="177.0" layoutY="172.0" mnemonicParsing="false" text="Hungary" />
+                        <CheckBox fx:id="pro_Co_Iceland_Box" layoutX="257.0" layoutY="172.0" mnemonicParsing="false" text="Iceland" />
+                        <CheckBox fx:id="pro_Co_India_Box" layoutX="331.0" layoutY="172.0" mnemonicParsing="false" text="India" />
+                        <CheckBox fx:id="pro_Co_Indonesia_Box" layoutX="404.0" layoutY="172.0" mnemonicParsing="false" text="Indonesia" />
+                        <CheckBox fx:id="pro_Co_Iran_Box" layoutX="14.0" layoutY="212.0" mnemonicParsing="false" text="Iran" />
+                        <CheckBox fx:id="pro_Co_Ireland_Box" layoutX="80.0" layoutY="212.0" mnemonicParsing="false" text="Ireland" />
+                        <CheckBox fx:id="pro_Co_Italy_Box" layoutX="148.0" layoutY="212.0" mnemonicParsing="false" text="Italy" />
+                        <CheckBox fx:id="pro_Co_Japan_Box" layoutX="208.0" layoutY="212.0" mnemonicParsing="false" text="Japan" />
+                        <CheckBox fx:id="pro_Co_Lithuania_Box" layoutX="272.0" layoutY="212.0" mnemonicParsing="false" text="Lithuania" />
+                        <CheckBox fx:id="pro_Co_Luxembourg_Box" layoutX="354.0" layoutY="212.0" mnemonicParsing="false" text="Luxembourg" />
+                        <CheckBox fx:id="pro_Co_Mexico_Box" layoutX="14.0" layoutY="243.0" mnemonicParsing="false" text="Mexico" />
+                        <CheckBox fx:id="pro_Co_Morocco_Box" layoutX="80.0" layoutY="243.0" mnemonicParsing="false" text="Morocco" />
+                        <CheckBox fx:id="pro_Co_Netherlands_Box" layoutX="159.0" layoutY="243.0" mnemonicParsing="false" text="Netherlands" />
+                        <CheckBox fx:id="pro_Co_New_Zealand_Box" layoutX="270.0" layoutY="243.0" mnemonicParsing="false" text="New Zeland" />
+                        <CheckBox fx:id="pro_Co_Nigeria_Box" layoutX="377.0" layoutY="243.0" mnemonicParsing="false" text="Nigeria" />
+                        <CheckBox fx:id="pro_Co_Norway_Box" layoutX="14.0" layoutY="282.0" mnemonicParsing="false" text="Norway" />
+                        <CheckBox fx:id="pro_Co_Pakistan_Box" layoutX="89.0" layoutY="282.0" mnemonicParsing="false" text="Pakistan" />
+                        <CheckBox fx:id="pro_Co_Peru_Box" layoutX="165.0" layoutY="282.0" mnemonicParsing="false" text="Peru" />
+                        <CheckBox fx:id="pro_Co_Philippines_Box" layoutX="260.0" layoutY="282.0" mnemonicParsing="false" text="Philippines" />
+                        <CheckBox fx:id="pro_Co_Poland_Box" layoutX="377.0" layoutY="282.0" mnemonicParsing="false" text="Poland" />
+                        <CheckBox fx:id="pro_Co_Romania_Box" layoutX="9.0" layoutY="320.0" mnemonicParsing="false" text="Romania" />
+                        <CheckBox fx:id="pro_Co_Russia_Box" layoutX="89.0" layoutY="320.0" mnemonicParsing="false" text="Russia" />
+                        <CheckBox fx:id="pro_Co_Singapore_Box" layoutX="165.0" layoutY="320.0" mnemonicParsing="false" text="Singapore" />
+                        <CheckBox fx:id="pro_Co_Slovakia_Box" layoutX="257.0" layoutY="320.0" mnemonicParsing="false" text="Slovakia" />
+                        <CheckBox fx:id="pro_Co_South_Africa_Box" layoutX="343.0" layoutY="320.0" mnemonicParsing="false" text="South Africa" />
+                        <CheckBox fx:id="pro_Co_South_Korea_Box" layoutX="9.0" layoutY="349.0" mnemonicParsing="false" text="South Korea" />
+                        <CheckBox fx:id="pro_Co_Spain_Box" layoutX="102.0" layoutY="349.0" mnemonicParsing="false" text="Spain" />
+                        <CheckBox fx:id="pro_Co_Sweden_Box" layoutX="165.0" layoutY="349.0" mnemonicParsing="false" text="Sweden" />
+                        <CheckBox fx:id="pro_Co_Switzerland_Box" layoutX="253.0" layoutY="349.0" mnemonicParsing="false" text="Switzerland" />
+                        <CheckBox fx:id="pro_Co_Taiwan_Box" layoutX="350.0" layoutY="349.0" mnemonicParsing="false" text="Taiwan" />
+                        <CheckBox fx:id="pro_Co_Thailand_Box" layoutX="9.0" layoutY="390.0" mnemonicParsing="false" text="Thailand" />
+                        <CheckBox fx:id="pro_Co_Turkey_Box" layoutX="102.0" layoutY="390.0" mnemonicParsing="false" text="Turkey" />
+                        <CheckBox fx:id="pro_Co_Ukraine_Box" layoutX="177.0" layoutY="390.0" mnemonicParsing="false" text="Ukraine" />
+                        <CheckBox fx:id="pro_Co_UAE_Box" layoutX="253.0" layoutY="390.0" mnemonicParsing="false" text="United Arab Emirates" />
+                        <CheckBox fx:id="pro_Co_UK_Box" layoutX="9.0" layoutY="430.0" mnemonicParsing="false" text="United Kingdom" />
+                        <CheckBox fx:id="pro_Co_USA_Box" layoutX="141.0" layoutY="430.0" mnemonicParsing="false" text="United States Of America" />
+                        <CheckBox fx:id="pro_Co_All_Box" layoutX="319.0" layoutY="430.0" mnemonicParsing="false" text="All" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </TitledPane>
+            <TitledPane fx:id="box_Office_Sliders_1_Pane" prefHeight="200.0" prefWidth="200.0" text="Box Office Sliders 1">
+               <content>
+                  <AnchorPane fx:id="box_Office_Sliders_1_Anchor_Pane" minHeight="-Infinity" prefHeight="500.0" prefWidth="200.0">
+                     <children>
+                        <Text fx:id="worldwide_Box_Low_Label" layoutX="206.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Worldwide $ Low" />
+                        <Slider fx:id="worldwide_Box_Low_Slider" layoutX="10.0" layoutY="45.0" prefHeight="14.0" prefWidth="482.0" />
+                        <Text fx:id="domestic_Box_Low_Label" layoutX="209.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Domestic $ Low" />
+                        <Slider fx:id="domestic_Box_Low_Slider" layoutX="6.0" layoutY="147.0" prefHeight="14.0" prefWidth="484.0" />
+                        <Text fx:id="foreign_Box_Low_Label" layoutX="215.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Foreign $ Low" />
+                        <Slider fx:id="foreign_Box_Low_Slider" layoutX="6.0" layoutY="257.0" prefHeight="14.0" prefWidth="480.0" />
+                        <Text fx:id="worldwide_Box_High_Label" layoutX="203.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Worldwide $ High" />
+                        <Slider fx:id="worldwide_Box_High_Slider" layoutX="7.0" layoutY="95.0" prefHeight="14.0" prefWidth="482.0" />
+                        <Label fx:id="worldwide_Box_High_Value_Display" layoutX="374.0" layoutY="67.0" />
+                        <Label fx:id="worldwide_Box_Low_Value_Display" layoutX="374.0" layoutY="20.0" />
+                        <Text fx:id="domestic_Box_High_Label" layoutX="212.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Domestic $ High" />
+                        <Slider fx:id="domestic_Box_High_Slider" layoutX="2.0" layoutY="200.0" prefHeight="14.0" prefWidth="488.0" />
+                        <Label fx:id="domestic_Box_Low_Value_Display" layoutX="346.0" layoutY="119.0" />
+                        <Label fx:id="domestic_Box_High_Value_Display" layoutX="346.0" layoutY="170.0" />
+                        <Text fx:id="foreign_Box_High_Label" layoutX="209.0" layoutY="301.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Foreign $ High" />
+                        <Slider fx:id="foreign_Box_High_Slider" layoutX="7.0" layoutY="320.0" prefHeight="14.0" prefWidth="479.0" />
+                        <Label fx:id="foreign_Box_Low_Value_Display" layoutX="346.0" layoutY="229.0" />
+                        <Label fx:id="foreign_Box_High_Value_Display" layoutX="346.0" layoutY="288.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </TitledPane>
+            <TitledPane fx:id="box_Office_Sliders_2_Pane" prefHeight="200.0" prefWidth="200.0" text="Box Office Sliders 2">
+               <content>
+                  <AnchorPane fx:id="box_Office_Sliders_2_Anchor_Pane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="200.0">
+                     <children>
+                        <Text fx:id="domestic_Percent_Box_Low_Label" layoutX="196.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Domestic % Low" />
+                        <Label fx:id="domestic_Percent_Box_Low_Value_Display" layoutX="356.0" layoutY="20.0" text="Label" />
+                        <Slider fx:id="domestic_Percent_Box_Low_Slider" layoutY="57.0" prefHeight="14.0" prefWidth="479.0" />
+                        <Slider fx:id="foreign_Percent_Box_Low_Slider" layoutY="172.0" prefHeight="14.0" prefWidth="480.0" />
+                        <Text fx:id="foreign_Percent_Box_Low_Label" layoutX="194.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Foreign % Low" />
+                        <Text fx:id="domestic_Percent_Box_High_Label" layoutX="194.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Domestic % High" />
+                        <Slider fx:id="domestic_Percent_Box_High_Slider" layoutY="114.0" prefHeight="14.0" prefWidth="477.0" />
+                        <Label fx:id="domestic_Percent_Box_High_Value_Display" layoutX="356.0" layoutY="83.0" text="Label" />
+                        <Text fx:id="foreign_Percent_Box_High_Label" layoutX="196.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Foreign % High" />
+                        <Slider fx:id="foreign_Percent_Box_High_Slider" layoutY="265.0" prefHeight="14.0" prefWidth="475.0" />
+                        <Label fx:id="foreign_Percent_Box_Low_Value_Display" layoutX="356.0" layoutY="144.0" text="Label" />
+                        <Label fx:id="foreign_Percent_Box_High_Value_Display" layoutX="356.0" layoutY="219.0" text="Label" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </TitledPane>
+            <TitledPane fx:id="ratings_Sliders_Pane" animated="false" text="Ratings">
+               <content>
+                  <AnchorPane fx:id="ratings_Sliders_Anchor_Pane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="200.0">
+                     <children>
+                        <Text fx:id="rating_Low_Label" layoutX="234.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rating Low" />
+                        <Slider fx:id="rating_Low_Slider" blockIncrement="1.0" layoutX="3.0" layoutY="76.0" majorTickUnit="1.0" max="10.0" minorTickCount="0" prefHeight="14.0" prefWidth="508.0" showTickLabels="true" showTickMarks="true" />
+                        <Text fx:id="vote_Count_Low_Label" layoutX="227.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vote Count Low" />
+                        <Slider fx:id="vote_Count_Low_Slider" layoutX="3.0" layoutY="212.0" prefHeight="14.0" prefWidth="507.0" />
+                        <Text fx:id="rating_High_Label" layoutX="232.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rating High" />
+                        <Slider fx:id="rating_High_Slider" layoutX="3.0" layoutY="158.0" prefHeight="14.0" prefWidth="506.0" />
+                        <Text fx:id="vote_Count_High_Label" layoutX="225.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vote Count High" />
+                        <Slider fx:id="vote_Count_High_Slider" layoutX="3.0" layoutY="270.0" prefHeight="14.0" prefWidth="505.0" />
+                        <Label fx:id="rating_Low_Value_Display" layoutX="362.0" layoutY="39.0" text="Label" />
+                        <Label fx:id="rating_High_Value_Display" layoutX="362.0" layoutY="129.0" text="Label" />
+                        <Label fx:id="vote_Count_Low_Value_Display" layoutX="362.0" layoutY="183.0" text="Label" />
+                        <Label fx:id="vote_Count_High_Value_Display" layoutX="362.0" layoutY="243.0" text="Label" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </TitledPane>
+            <TitledPane prefHeight="200.0" prefWidth="200.0" text="Graph Type">
+               <content>
+                  <AnchorPane minHeight="-Infinity" prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Label fx:id="graph_Type_Label" layoutX="61.0" layoutY="77.0" text="Graph Type" />
+                        <ChoiceBox fx:id="graph_CBox" layoutX="146.0" layoutY="73.0" prefWidth="150.0" />
+                     </children></AnchorPane>
+               </content>
+            </TitledPane>
+        </panes>
+      </Accordion>
+      <Button fx:id="queryButton" layoutX="170.0" layoutY="648.0" mnemonicParsing="false" onAction="#gatherSelections" text="Submit Query" />
+      <Button layoutX="305.0" layoutY="648.0" mnemonicParsing="false" text="Reset Filters" />
+      <StackPane fx:id="image_Pane"
+                 layoutX="600.0"
+                 layoutY="74.0"
+                 prefHeight="574.0"
+                 prefWidth="568.0">
+         <children>
+            <ImageView fx:id="graph_View"
+                       preserveRatio="true"
+                       smooth="true"/>
+         </children>
+      </StackPane>
+      <Button fx:id="load_Dataset_Button" layoutX="41.0" layoutY="648.0" mnemonicParsing="false" text="Load Dataset" />
+   </children>
+</Pane>
